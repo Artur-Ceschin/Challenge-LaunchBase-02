@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #121214;
+}
+
+.container{
+    max-width: 80%;
+}
+/*LINKS*/
+
+header{
+    padding: 2.5rem;
+}
+
+.links ul {
+    list-style: none;
+    text-align: end;
+    
+}
+.links ul li{
+    margin-right: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    
+}
+.links ul li + li + li{
+    margin-right: 0;
+}
+.links a{
+    text-decoration: none;
+    color: #e1e1e6;;
+}
