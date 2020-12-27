@@ -3,18 +3,16 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-}
-body{
-    background: #121214;
+    text-decoration: none;
 }
 
-.container{
-    max-width: 80%;
-}
 /*LINKS*/
 
 header{
-    padding: 2.5rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background: #202024;
 }
 
 .links ul {
@@ -23,15 +21,105 @@ header{
     
 }
 .links ul li{
-    margin-right: 2rem;
+    margin-right: 30px;
     display: inline-block;
     padding: 1rem;
     
 }
-.links ul li + li + li{
+.links ul li + li + li +li{
     margin-right: 0;
 }
 .links a{
     text-decoration: none;
     color: #e1e1e6;;
+    padding: 16px;
+}
+.links a:hover{
+    background-color: #444446;
+}
+
+/*MAIN*/
+.container-content{
+    margin: auto;
+    background: #121214;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.image-content img{
+    margin:  auto;
+    transition: all 1s;
+}   
+.image-content img:hover{
+    transform: rotateZ(360deg);
+}
+.content{
+    margin: 0 0 3rem 0;
+}
+.content p{
+    color: #e1e1e6;
+    font-size: 1.5rem;
+    width: 900px;
+    margin: auto;
+    line-height: 2rem;
+    padding: 50px;
+}
+
+.content p:hover{
+    background-color: #202024;
+    border-radius: 5px;
+}
+
+/*TECNOLOGIES*/
+.tecnologies{
+    margin: auto;
+}
+
+.tecnologies ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.tecnologies ul li{
+    padding: 2rem;
+    background-color: #202024;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+    transition: all 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tecnologies ul li:hover{
+    transform: scale(1.1);
+}
+
+.tecnologies ul li img{
+    width: 200px;
+}
+.tecnologies ul li h3{
+    margin: 16px;
+    font-size: 2rem;
+    color: #e1e1e6;
+}
+
+/*FOOTER*/
+
+footer{
+    background: #202024;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer a{
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 16px;
+    color: #e1e1e6;
+}
+
+footer a:hover{
+    background-color: #444446;
 }
